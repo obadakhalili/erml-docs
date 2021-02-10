@@ -22,7 +22,7 @@ Prerequisites
 * Node version 14 and higher
 * NPM
 
-You can install ther ERML parser from [NPM](http://npmjs.org/package/erml) via the command
+You can install the ERML parser from [NPM](http://npmjs.org/package/erml) via the command
 
 ```sh
 npm install erml
