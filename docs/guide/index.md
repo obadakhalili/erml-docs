@@ -28,6 +28,13 @@ You can install the ERML parser from [NPM](http://npmjs.org/package/erml) via th
 npm install erml
 ```
 
+After that all you have to do is to execute the parser function exported by the library
+
+```js
+const ERMLParser = require("erml");
+const ast = ERMLParser(`ENTITY Example_entity { SIMPLE "attribute_name" }`);
+```
+
 ## Entities
 
 Entities can be declared as
