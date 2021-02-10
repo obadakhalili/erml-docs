@@ -8,12 +8,13 @@ sidebar: auto
 
 ERML is a super easy-to-write DSL that represents conceptual data models using the Entity-Relationship modeling concepts.
 What does that gibberish mean? You write code to represent your Entity-Relationship diagram, and the ERML parser parses it into an AST. From there, an application can take the resulted AST and build all sorts of things with it, creating an ecosystem.
+<br/>
 Examples of things that can be built on top of ERML:
 
-* Entity Relationship diagram visualizer.
-* CLI tool that takes ERML code as input and turns it into [DBML](https://www.dbml.org/) code, which can be converted into SQL code.
+* Entity Relationship diagram visualizer
+* CLI tool that takes ERML code as input and turns it into [DBML](https://www.dbml.org/) code, which can be converted into SQL
 
-What is DBML? DBML is where ERML is inspired from. You can know more about it from the [inspiration section](/#inspiration).
+What is DBML? DBML is where ERML is inspired from. You can read more about it from the [inspiration section](/#inspiration).
 
 ## The Why
 

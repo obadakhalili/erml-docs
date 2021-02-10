@@ -2,11 +2,31 @@
 sidebar: auto
 ---
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"/>
+
 # Guide
 
-## Table of Content
+::: warning
+This documentation is not aimed at teaching you Entity-Relationship modeling concepts, rather than how to represent them using ERML. If you don't know what is Entity-Relationship, you can read about them from [here](https://creately.com/blog/diagrams/er-diagrams-tutorial/#Cardinality_and_Ordinality)
+:::
+
+# Table of Content
 
 [[toc]]
+
+## Installation
+
+Prerequisites
+
+* Node version 14 and higher
+* NPM
+
+```sh
+npm install erml
+```
+
+You can install ther ERML parser from [NPM](http://npmjs.org/package/erml) via the command
 
 ## Entities
 
@@ -20,7 +40,7 @@ Entities can be declared as
     }
     ```
 
-- Dependent/Week Entities
+- Dependent/Week entities
 
     ```ts{1}
     WEAK ENTITY Entity_name OWNER Owner_entity_name {
@@ -70,7 +90,8 @@ REL User_group {
 }
 ```
 
-Alternatively, we can use the `(min, max)` notation. Where `min` is the minimum number of participating entities (participation constraint), and `max` is the maximum number of participating entities (cardinality ratio). Such that 0 ≤ `min` ≤ `max` && `max` ≥ 1.
+Alternatively, we can use the `(min, max)` notation. Where `min` is the minimum number of participating entities (participation constraint), and `max` is the maximum number of participating entities (cardinality ratio).
+Such that $0 \leq min \leq max \land max \geq 1$.
 
 ```ts{3,4}
 REL User_group {
@@ -141,6 +162,7 @@ The syntax for the `COMPOSITE` attribute type
 
 ::: tip Note
 ERML supports trailing commas. These code examples are valid
+:::
 
 ```ts{5,6}
 REL Rel_name {
@@ -161,7 +183,6 @@ ENTITY Entity_name {
   PRIMARY "attribute_name4",
 }
 ```
-:::
 
 # The Complete Code of The Popular Company DB Example
 
