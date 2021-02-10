@@ -13,8 +13,9 @@
     "entity-relationship-diagram"
   ],
   "author": "Obada Khalili",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "markdown-it-katex": "^2.0.3",
     "vuepress": "^1.8.0"
   }
 }
