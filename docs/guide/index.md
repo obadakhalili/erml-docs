@@ -5,7 +5,7 @@ sidebar: auto
 # Guide
 
 ::: warning
-This documentation is not aimed at teaching you Entity-Relationship modeling concepts, rather than how to represent them using ERML. If you don't know what is Entity-Relationship, you can read about them from [here](https://creately.com/blog/diagrams/er-diagrams-tutorial/#Cardinality_and_Ordinality)
+This documentation is not aimed at teaching you Entity-Relationship modeling concepts, rather than how to represent them using ERML. If you don't know what is Entity-Relationship, you can read about it from [here](https://creately.com/blog/diagrams/er-diagrams-tutorial)
 :::
 
 # Table of Content
