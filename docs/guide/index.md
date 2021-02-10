@@ -2,11 +2,11 @@
 sidebar: auto
 ---
 
-# Table of Content
+# Guide
+
+## Table of Content
 
 [[toc]]
-
-# Guide
 
 ## Entities
 

@@ -4,14 +4,17 @@
   "description": "The docs website for ERML",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "keywords": [],
+  "keywords": [
+    "erml",
+    "docs",
+    "entity-relationship-diagram"
+  ],
   "author": "Obada Khalili",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^0.11.5"
+    "vuepress": "^1.8.0"
   }
 }
