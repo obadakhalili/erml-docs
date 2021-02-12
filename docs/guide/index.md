@@ -16,7 +16,7 @@ This documentation is not aimed at teaching you Entity-Relationship modeling con
 
 Prerequisites
 
-* Node version 14 or higher
+* Node version 12.0.0 or higher
 * NPM
 
 You can install the ERML parser from [NPM](http://npmjs.org/package/erml) or [yarn](https://classic.yarnpkg.com/en/package/erml) via the commands
