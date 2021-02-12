@@ -101,15 +101,11 @@ Such that $0 \leq min \leq max \land max \geq 1$.
 ```ts{3,4}
 REL User_group {
   // ..
-  User (0, Infinity),
-  Group (5, Infinity),
+  User (0, N),
+  Group (5, N),
   // ..
 }
 ```
-
-::: tip Note
-Please note that the keyword `Infinity` replaces the `N` when using the minmax notation
-:::
 
 ### Relationship's Attributes
 
@@ -228,8 +224,8 @@ WEAK ENTITY Dependent OWNER Employee {
 }
 
 REL Works_for {
-  Employee (1, Infinity),
-  Department (20, Infinity)
+  Employee (1, N),
+  Department (20, N)
 }
 
 REL Manages {
