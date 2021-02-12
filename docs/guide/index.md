@@ -19,10 +19,11 @@ Prerequisites
 * Node version 14 or higher
 * NPM
 
-You can install the ERML parser from [NPM](http://npmjs.org/package/erml) via the command
+You can install the ERML parser from [NPM](http://npmjs.org/package/erml) or [yarn](https://classic.yarnpkg.com/en/package/erml) via the commands
 
 ```sh
-npm install erml
+npm install erml # From NPM
+yarn add erml # From yarn
 ```
 
 After that all you have to do is to execute the parser function exported by the library
