@@ -9,7 +9,7 @@ module.exports = {
     nav: [
       { text: "About", link: "/" },
       { text: "Guide", link: "/guide/" },
-      { text: "Playground", link: "https://astexplorer-fork.netlify.app/" },
+      { text: "Playground", link: "https://erml-visualizer.netlify.app/" },
       { text: "GitHub", link: "https://github.com/obadakhalili/erml" }
     ]
   },
