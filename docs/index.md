@@ -11,8 +11,8 @@ What does that gibberish mean? You write code to represent your Entity-Relations
 <br/>
 Examples of things that can be built on top of ERML:
 
-* [ERD visualizer](https://erml-visualizer.netlify.app/)
-* CLI tool that takes ERML code as input and turns it into [DBML](https://www.dbml.org/) code, which can be converted into SQL
+- [ERD visualizer](https://erml-visualizer.netlify.app/)
+- CLI tool that takes ERML code as input and turns it into [DBML](https://www.dbml.org/) code, which can be converted into SQL
 
 What is DBML? DBML is where ERML is inspired from. You can read more about it from the [inspiration section](/#inspiration).
 

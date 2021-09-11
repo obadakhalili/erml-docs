@@ -16,8 +16,8 @@ This documentation is not aimed at teaching you Entity-Relationship modeling con
 
 Prerequisites
 
-* Node version 12.0.0 or higher
-* NPM
+- Node version 12.0.0 or higher
+- NPM
 
 You can install the ERML parser from [NPM](http://npmjs.org/package/@erml/parser) or [yarn](https://classic.yarnpkg.com/en/package/@erml/parser) via the commands
 
@@ -39,19 +39,19 @@ Entities can be declared as
 
 - Independent entities
 
-    ```ts{1}
-    ENTITY Entity_name {
-      // Set of entity attributes
-    }
-    ```
+  ```ts{1}
+  ENTITY Entity_name {
+    // Set of entity attributes
+  }
+  ```
 
 - Dependent/Week entities
 
-    ```ts{1}
-    WEAK ENTITY Entity_name OWNER Owner_entity_name {
-      // Set of entity attributes
-    }
-    ```
+  ```ts{1}
+  WEAK ENTITY Entity_name OWNER Owner_entity_name {
+    // Set of entity attributes
+  }
+  ```
 
 ## Relationships
 
@@ -59,19 +59,19 @@ Relationships can be declared as
 
 - Normal relationships
 
-    ```ts{1}
-    REL Relationship_name {
-      // Set of participating entities, structural constraints, and attributes
-    }
-    ```
+  ```ts{1}
+  REL Relationship_name {
+    // Set of participating entities, structural constraints, and attributes
+  }
+  ```
 
 - Identifying relationships
 
-    ```ts{1}
-    IDEN REL Relationship_name {
-      // Set of participating entities, structural constraints, and attributes
-    }
-    ```
+  ```ts{1}
+  IDEN REL Relationship_name {
+    // Set of participating entities, structural constraints, and attributes
+  }
+  ```
 
 ### Participating Entities, and Structural Constraints
 
@@ -157,9 +157,10 @@ The syntax for the `COMPOSITE` attribute type
 ```
 
 ::: tip Note
-* One-line comments can be achieved by prefixing them with ``` // ```
-* Multi-line comments can be achieved by wrapping them between ``` /* */ ```
-:::
+
+- One-line comments can be achieved by prefixing them with `//`
+- Multi-line comments can be achieved by wrapping them between `/* */`
+  :::
 
 ::: tip Note
 ERML supports trailing commas. These code examples are valid
