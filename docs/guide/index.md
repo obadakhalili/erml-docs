@@ -14,10 +14,10 @@ This documentation is not aimed at teaching you Entity-Relationship modeling con
 
 ## Installation
 
-Prerequisites
+Prerequisites:
 
-- Node version 12.0.0 or higher
-- NPM
+- Node version 12.0.0 or higher.
+- NPM.
 
 You can install the ERML parser from [NPM](http://npmjs.org/package/@erml/parser) or [yarn](https://classic.yarnpkg.com/en/package/@erml/parser) via the commands
 
@@ -35,7 +35,7 @@ const ast = ERMLParser(`ENTITY Example_entity { SIMPLE "attribute_name" }`)
 
 ## Entities
 
-Entities can be declared as
+Entities can be declared as:
 
 - Independent entities
 
@@ -55,7 +55,7 @@ Entities can be declared as
 
 ## Relationships
 
-Relationships can be declared as
+Relationships can be declared as:
 
 - Normal relationships
 
@@ -121,7 +121,7 @@ We can set attributes to relationships as follows
 
 ## Attributes
 
-Attributes can be set to entities, relationships, and `COMPOSITE` attribute types. An attribute can take on one of 8 types
+Attributes can be set to entities, relationships, and `COMPOSITE` attribute types. An attribute can take on one of 8 types:
 
 1. `SIMPLE` / `ATOMIC`
 2. `PRIMARY`
@@ -156,43 +156,35 @@ The syntax for the `COMPOSITE` attribute type
 }
 ```
 
-::: tip Note
+## Notes
 
-- One-line comments can be achieved by prefixing them with `//`
-- Multi-line comments can be achieved by wrapping them between `/* */`
-  :::
-
-::: tip Note
-ERML supports trailing commas. These code examples are valid
-:::
-
-::: tip Note
-Valid identifier requirements:
-
-- Maximum of 30 characters.
-- Starts with an uppercase/lowercase letter (a-z, A-Z), or an underscore.
-- Every character after the first should either be a number, an underscore, or an uppercase/lowercase letter.
-  :::
-
-```ts{5,6}
-REL Rel_name {
-  Participating_entity1 <PARTIAL, 1>,
-  Participating_entity2 <TOTAL, 1>,
-  ATTRIBUTES {
-    SIMPLE "attribute_name",
-  },
-}
-```
-
-```ts{4,6}
-ENTITY Entity_name {
-  COMPOSITE "attribute_name1" {
-    SIMPLE "attribute_name2",
-    SIMPLE "attribute_name3",
-  },
-  PRIMARY "attribute_name4",
-}
-```
+- Valid identifier requirements:
+  - Maximum of 30 characters.
+  - Starts with an uppercase/lowercase letter (a-z, A-Z), or an underscore.
+  - Every character after the first should either be a number, an underscore, or an uppercase/lowercase letter.
+- ERML is case-sensitive.
+- Comments:
+  - One-line comments can be achieved by prefixing them with `//`.
+  - Multi-line comments can be achieved by wrapping them between `/* */`.
+- ERML supports trailing commas, which means that these code examples are valid:
+  ```ts{5,6}
+  REL Rel_name {
+    Participating_entity1 <PARTIAL, 1>,
+    Participating_entity2 <TOTAL, 1>,
+    ATTRIBUTES {
+      SIMPLE "attribute_name",
+    },
+  }
+  ```
+  ```ts{4,6}
+  ENTITY Entity_name {
+    COMPOSITE "attribute_name1" {
+      SIMPLE "attribute_name2",
+      SIMPLE "attribute_name3",
+    },
+    PRIMARY "attribute_name4",
+  }
+  ```
 
 # The Complete Code of The Popular Company DB Example
 
