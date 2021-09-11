@@ -19,18 +19,18 @@ Prerequisites
 * Node version 12.0.0 or higher
 * NPM
 
-You can install the ERML parser from [NPM](http://npmjs.org/package/erml) or [yarn](https://classic.yarnpkg.com/en/package/erml) via the commands
+You can install the ERML parser from [NPM](http://npmjs.org/package/@erml/parser) or [yarn](https://classic.yarnpkg.com/en/package/@erml/parser) via the commands
 
 ```sh
-npm install erml # From NPM
-yarn add erml # From yarn
+npm install @erml/parser
+yarn add @erml/parser
 ```
 
-After that all you have to do is to execute the parser function exported by the library
+After that, all you have to do is to execute the parsing function exported by the library
 
 ```js
-const ERMLParser = require("erml");
-const ast = ERMLParser(`ENTITY Example_entity { SIMPLE "attribute_name" }`);
+const ERMLParser = require("@erml/parser")
+const ast = ERMLParser(`ENTITY Example_entity { SIMPLE "attribute_name" }`)
 ```
 
 ## Entities
