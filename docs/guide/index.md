@@ -166,6 +166,14 @@ The syntax for the `COMPOSITE` attribute type
 ERML supports trailing commas. These code examples are valid
 :::
 
+::: tip Note
+Valid identifier requirements:
+
+- Maximum of 30 characters.
+- Starts with an uppercase/lowercase letter (a-z, A-Z), or an underscore.
+- Every character after the first should either be a number, an underscore, or an uppercase/lowercase letter.
+  :::
+
 ```ts{5,6}
 REL Rel_name {
   Participating_entity1 <PARTIAL, 1>,
